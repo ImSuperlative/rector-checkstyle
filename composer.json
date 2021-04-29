@@ -5,7 +5,7 @@
   "description": "Rector checkstyle output",
   "require": {
     "php": "^7.4|^8.0",
-    "rector/rector-prefixed": "^0.10"
+    "rector/rector": "^0.10"
   },
   "autoload": {
     "psr-4": {
