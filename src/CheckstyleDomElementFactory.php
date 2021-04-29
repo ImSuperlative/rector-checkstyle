@@ -13,7 +13,7 @@ use Rector\Core\ValueObject\Reporting\FileDiff;
 /**
  * Inspiration in @see \Symfony\Component\Console\Descriptor\XmlDescriptor
  */
-final class CheckstyleDOMElementFactory
+final class CheckstyleDomElementFactory
 {
     /**
      * @var string

@@ -28,7 +28,7 @@ final class CheckstyleOutputFormatter implements OutputFormatterInterface
     {
         $domDocument = new DOMDocument('1.0', 'UTF-8');
 
-        $checkstyleDOMElementFactory = new CheckstyleDOMElementFactory();
+        $checkstyleDOMElementFactory = new CheckstyleDomElementFactory();
         $domElement = $checkstyleDOMElementFactory->create($domDocument, $processResult);
         //$domElement = $this->checkstyleDOMElementFactory->create($domDocument, $processResult);
         $domDocument->appendChild($domElement);
