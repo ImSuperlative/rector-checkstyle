@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Rector\Checkstyle;
 
 use Rector\ChangesReporting\Contract\Output\OutputFormatterInterface;
+use Rector\Core\ValueObject\Configuration;
 use Rector\Core\ValueObject\ProcessResult;
 use DOMDocument;
 
@@ -24,7 +25,7 @@ final class CheckstyleOutputFormatter implements OutputFormatterInterface
     }
     */
 
-    public function report(ProcessResult $processResult): void
+    public function report(ProcessResult $processResult, Configuration $configuration): void
     {
         $domDocument = new DOMDocument('1.0', 'UTF-8');
 
